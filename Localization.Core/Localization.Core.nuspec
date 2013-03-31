@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Eric Boumendil</authors>
+    <owners>Eric Boumendil</owners>
+    <projectUrl>http://github.com/eric-b/Localization</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes />
+    <copyright></copyright>
+    <tags></tags>
+  </metadata>
+</package>

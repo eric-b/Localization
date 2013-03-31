@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalizedStrings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://github.com/eric-b/Localization/">
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>5e090e4601663517e7121fcf7c34d8ae</Key>
+    <Source>/Home/Index</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante.</Text>
+    <TranslatedText>Example of localized string in the current culture.</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>250582666e1a3a9c9f5eedca4377fdd4</Key>
+    <Source>TestMvcApp.Controllers.HomeController</Source>
+    <Text>Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit (wikipedia).</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>31dfadc923671079a4642385493865e6</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Name</Text>
+    <TranslatedText>Prénom</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>e6935d086fa09efd9af695f79f795cb2</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Last name</Text>
+    <TranslatedText/>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>e1858bfdd8881b03a319035e72eff1d3</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Description</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>5e090e4601663517e7121fcf7c34d8ae</Key>
+    <Source>/Home/Index</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante.</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>250582666e1a3a9c9f5eedca4377fdd4</Key>
+    <Source>TestMvcApp.Controllers.HomeController</Source>
+    <Text>Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit (wikipedia).</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>31dfadc923671079a4642385493865e6</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Name</Text>
+    <TranslatedText>Prénom</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>e6935d086fa09efd9af695f79f795cb2</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Last name</Text>
+    <TranslatedText>Nom</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>e1858bfdd8881b03a319035e72eff1d3</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Description</Text>
+    <TranslatedText>Description</TranslatedText>
+  </LocalizedString>
+</LocalizedStrings>
