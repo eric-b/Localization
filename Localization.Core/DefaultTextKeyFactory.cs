@@ -8,7 +8,7 @@ namespace Localization.Core
 {
     /// <summary>
     /// <para>Default implementation of <see cref="ITextKeyFactory"/>.</para>
-    /// <para>Generates a SHA-1 hash.</para>
+    /// <para>Generates an MD5 hash.</para>
     /// </summary>
     public sealed class DefaultTextKeyFactory : ITextKeyFactory
     {
