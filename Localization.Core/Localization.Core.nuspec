@@ -9,7 +9,7 @@
     <projectUrl>http://github.com/eric-b/Localization</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes />
+    <releaseNotes>v1.1.0.0: Minor but breaking change in DefaultTextKeyFactory to ignore case.</releaseNotes>
     <copyright></copyright>
     <tags></tags>
   </metadata>

@@ -18,7 +18,7 @@ namespace Localization.Core
 
         public string Create(string sourceName, string textName)
         {
-            var data = _encoding.GetBytes(string.Format("{0};{1}", sourceName, textName));
+            var data = _encoding.GetBytes(string.Format("{0};{1}", sourceName.ToLowerInvariant(), textName.ToLowerInvariant()));
             _md5.HashCore(data, 0, data.Length);
             var hash = _md5.HashFinal();
             _md5.InitializeVariables();
