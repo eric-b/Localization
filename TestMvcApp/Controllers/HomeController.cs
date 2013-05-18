@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using Localization.Core;
 using TestMvcApp.Models;
+using Localization;
 
 namespace TestMvcApp.Controllers
 {
@@ -19,7 +20,40 @@ namespace TestMvcApp.Controllers
             {
                 Name = "John", 
                 Lastname = "Doe",
-                Description = _localizer.Translate("Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit (wikipedia).")
+                Description = _localizer.Translate("Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit ({0}).", "wikipedia")
+            });
+        }
+
+        /// <summary>
+        /// Illustrate another way...
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Index2()
+        {
+            return View("Index", new TestViewModel()
+            {
+                Name = "John",
+                Lastname = "Doe",
+                // this.Translate requires Localization namespace (extension method)
+                // StringProvider<HomeController> _localizer is no more needed!
+                Description = this.Translate("Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit ({0}).", "wikipedia")
+            });
+        }
+
+        /// <summary>
+        /// Illustrate another way...
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Index3()
+        {
+            return View("Index", new TestViewModel()
+            {
+                Name = "John",
+                Lastname = "Doe",
+                // "".Translate requires Localization namespace (extension method)
+                // StringProvider<HomeController> _localizer is no more needed!
+                // Available from anywhere (not only a Controller)...
+                Description = "Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit ({0}).".Translate(this, "wikipedia")
             });
         }
 

@@ -42,6 +42,8 @@ namespace TestMvcApp.App_Start
             var translationsPath = HttpContext.Current.Server.MapPath("~/App_Data/translations.xml");
             container.RegisterSingle<ILocalizedRepository>(() => new XmlFileRepository(translationsPath));
 
+            var fallbackCulture = CultureInfo.GetCultureInfo("en-US");
+
             // View localization:
             container.RegisterSingle<IViewNameFactory, DefaultViewNameFactory>();
             container.RegisterSingle<ILocalizedStringProvider>(
@@ -51,7 +53,9 @@ namespace TestMvcApp.App_Start
                     container.GetInstance<ILocalizedRepository>(), 
                     container.GetInstance<ITextKeyFactory>(),
                     container.GetInstance<ILogger>(), 
-                    CultureInfo.GetCultureInfo("fr-FR") // native text is in french...
+                    CultureInfo.GetCultureInfo("fr-FR"), // native text is in french...
+                    fallbackCulture,
+                    DefaultMissingLocalizedStringExtensionPoint.Instance
                     ));
 
             // Legacy class localization:
@@ -63,7 +67,9 @@ namespace TestMvcApp.App_Start
                                                                                container.GetInstance<ILocalizedRepository>(),
                                                                                container.GetInstance<ITextKeyFactory>(),
                                                                                container.GetInstance<ILogger>(),
-                                                                               CultureInfo.GetCultureInfo("en-US")), // Names of model properties are in english...
+                                                                               CultureInfo.GetCultureInfo("en-US"), // Names of model properties are in english...
+                                                                               fallbackCulture,
+                                                                               DefaultMissingLocalizedStringExtensionPoint.Instance), 
                                                                             container.GetInstance<ITypeNameFactory>(),
                                                                             container.GetInstance<ILogger>()));
         }

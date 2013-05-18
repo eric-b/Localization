@@ -4,6 +4,7 @@
 }
 
 <h2>Demo</h2>
-<p>@Html.Translate("Exemple de chaîne localisée dans la culture courante.")</p>
+<p>@Html.Translate("Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.")</p>
+<p><a href="@Html.Translate(true, "http://www.google.com")">@Html.Translate("Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.")</a></p>
 <p></p>
 @Html.DisplayForModel()

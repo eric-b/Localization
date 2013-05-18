@@ -1,73 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LocalizedStrings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://github.com/eric-b/Localization/">
   <LocalizedString>
-    <Culture>en-US</Culture>
-    <Key>5e090e4601663517e7121fcf7c34d8ae</Key>
-    <Source>/Home/Index</Source>
-    <Text>Exemple de chaîne localisée dans la culture courante.</Text>
-    <TranslatedText>Example of localized string in the current culture.</TranslatedText>
-  </LocalizedString>
-  <LocalizedString>
-    <Culture>en-US</Culture>
-    <Key>250582666e1a3a9c9f5eedca4377fdd4</Key>
+    <Culture>fr-FR</Culture>
+    <Key>3fb4ef8bd18cfd669535359b5998289c</Key>
     <Source>TestMvcApp.Controllers.HomeController</Source>
-    <Text>Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit (wikipedia).</Text>
-    <TranslatedText />
-  </LocalizedString>
-  <LocalizedString>
-    <Culture>en-US</Culture>
-    <Key>31dfadc923671079a4642385493865e6</Key>
-    <Source>TestMvcApp.Models.TestViewModel</Source>
-    <Text>Name</Text>
-    <TranslatedText>Prénom</TranslatedText>
-  </LocalizedString>
-  <LocalizedString>
-    <Culture>en-US</Culture>
-    <Key>e6935d086fa09efd9af695f79f795cb2</Key>
-    <Source>TestMvcApp.Models.TestViewModel</Source>
-    <Text>Last name</Text>
-    <TranslatedText/>
-  </LocalizedString>
-  <LocalizedString>
-    <Culture>en-US</Culture>
-    <Key>e1858bfdd8881b03a319035e72eff1d3</Key>
-    <Source>TestMvcApp.Models.TestViewModel</Source>
-    <Text>Description</Text>
+    <Text>Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit ({0}).</Text>
     <TranslatedText />
   </LocalizedString>
   <LocalizedString>
     <Culture>fr-FR</Culture>
-    <Key>5e090e4601663517e7121fcf7c34d8ae</Key>
+    <Key>9ff06c6ecefe57b385417c1e3379358e</Key>
     <Source>/Home/Index</Source>
-    <Text>Exemple de chaîne localisée dans la culture courante.</Text>
+    <Text>Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>9ff06c6ecefe57b385417c1e3379358e</Key>
+    <Source>/Home/Index</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.</Text>
+    <TranslatedText>Example of localized string in the current culture. Change the language of your browser to see the difference in English and French for example.</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>4f6ab20184476f4664e2aef0531afb33</Key>
+    <Source>/Home/Index</Source>
+    <Text>http://www.google.com</Text>
+    <TranslatedText>http://www.google.fr</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>7e6236e419bb76b2e2d4a7924ae0eb8b</Key>
+    <Source>/Home/Index</Source>
+    <Text>Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.</Text>
     <TranslatedText />
   </LocalizedString>
   <LocalizedString>
     <Culture>fr-FR</Culture>
-    <Key>250582666e1a3a9c9f5eedca4377fdd4</Key>
-    <Source>TestMvcApp.Controllers.HomeController</Source>
-    <Text>Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit (wikipedia).</Text>
-    <TranslatedText />
-  </LocalizedString>
-  <LocalizedString>
-    <Culture>fr-FR</Culture>
-    <Key>31dfadc923671079a4642385493865e6</Key>
+    <Key>950867a3154a22aa99fe3f5f357032af</Key>
     <Source>TestMvcApp.Models.TestViewModel</Source>
     <Text>Name</Text>
     <TranslatedText>Prénom</TranslatedText>
   </LocalizedString>
   <LocalizedString>
     <Culture>fr-FR</Culture>
-    <Key>e6935d086fa09efd9af695f79f795cb2</Key>
+    <Key>847d6e80171271aa5d2489e78634cd28</Key>
     <Source>TestMvcApp.Models.TestViewModel</Source>
     <Text>Last name</Text>
     <TranslatedText>Nom</TranslatedText>
   </LocalizedString>
   <LocalizedString>
     <Culture>fr-FR</Culture>
-    <Key>e1858bfdd8881b03a319035e72eff1d3</Key>
+    <Key>858e04e4c52c575069fc811901c8e668</Key>
     <Source>TestMvcApp.Models.TestViewModel</Source>
     <Text>Description</Text>
     <TranslatedText>Description</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>25dd51369baa19994db5a998a196d5d9</Key>
+    <Source>/Home/Index2</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>b8a92865f28dbac6df9ea62c3d64c6c7</Key>
+    <Source>/Home/Index2</Source>
+    <Text>http://www.google.com</Text>
+    <TranslatedText>http://www.google.fr</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>268c89d74b47adaa19dabfceb4785e5d</Key>
+    <Source>/Home/Index2</Source>
+    <Text>Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>51c1f1fa9a4e61519eb3909c164776c2</Key>
+    <Source>/Home/Index3</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>e9e90b777d8b72c27e2230465614f08a</Key>
+    <Source>/Home/Index3</Source>
+    <Text>http://www.google.com</Text>
+    <TranslatedText>http://www.google.fr</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>fr-FR</Culture>
+    <Key>a85cd551f7d9dfce6c43d8c3d3a20edc</Key>
+    <Source>/Home/Index3</Source>
+    <Text>Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>3fb4ef8bd18cfd669535359b5998289c</Key>
+    <Source>TestMvcApp.Controllers.HomeController</Source>
+    <Text>Identité utilisée pour désigner une hypothétique personne de profil moyen représentant la société dans laquelle elle vit ({0}).</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>4f6ab20184476f4664e2aef0531afb33</Key>
+    <Source>/Home/Index</Source>
+    <Text>http://www.google.com</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>7e6236e419bb76b2e2d4a7924ae0eb8b</Key>
+    <Source>/Home/Index</Source>
+    <Text>Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.</Text>
+    <TranslatedText>This localized link will still work, even if it is not translated.</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>950867a3154a22aa99fe3f5f357032af</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Name</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>847d6e80171271aa5d2489e78634cd28</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Last name</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>858e04e4c52c575069fc811901c8e668</Key>
+    <Source>TestMvcApp.Models.TestViewModel</Source>
+    <Text>Description</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>25dd51369baa19994db5a998a196d5d9</Key>
+    <Source>/Home/Index2</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.</Text>
+    <TranslatedText>Example of localized string in the current culture. Change the language of your browser to see the difference in English and French for example.</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>b8a92865f28dbac6df9ea62c3d64c6c7</Key>
+    <Source>/Home/Index2</Source>
+    <Text>http://www.google.com</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>268c89d74b47adaa19dabfceb4785e5d</Key>
+    <Source>/Home/Index2</Source>
+    <Text>Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.</Text>
+    <TranslatedText>This localized link will still work, even if it is not translated.</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>51c1f1fa9a4e61519eb3909c164776c2</Key>
+    <Source>/Home/Index3</Source>
+    <Text>Exemple de chaîne localisée dans la culture courante. Modifiez la langue de votre navigateur pour voir la différence en anglais et en français par exemple.</Text>
+    <TranslatedText>Example of localized string in the current culture. Change the language of your browser to see the difference in English and French for example.</TranslatedText>
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>e9e90b777d8b72c27e2230465614f08a</Key>
+    <Source>/Home/Index3</Source>
+    <Text>http://www.google.com</Text>
+    <TranslatedText />
+  </LocalizedString>
+  <LocalizedString>
+    <Culture>en-US</Culture>
+    <Key>a85cd551f7d9dfce6c43d8c3d3a20edc</Key>
+    <Source>/Home/Index3</Source>
+    <Text>Ce lien localisé fonctionnera toujours, même s'il n'est pas traduit.</Text>
+    <TranslatedText>This localized link will still work, even if it is not translated.</TranslatedText>
   </LocalizedString>
 </LocalizedStrings>

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefaultViewNameFactory.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Html\ExtensionMethods.cs" />
     <Compile Include="XmlFileRepository.cs" />
     <Compile Include="_interfaces\IViewNameFactory.cs" />

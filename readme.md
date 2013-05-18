@@ -156,6 +156,35 @@ Use the generic StringProvider< T > class. The generic parameter type T represen
 
     }
 
+#### A lazier way...
+
+Use an extension method from namespace Localization (implemented in Localization.MvcProviders) :
+
+	using Localization;
+	public class HomeController : Controller
+    {       
+        public ActionResult Index()
+        {
+            string localizedString = this.Translate("Texte à traduire");
+
+			// [...]
+        }
+    }
+
+Or from any other class (not only a controller) :
+
+	using Localization;
+	public class MyClass
+    {       
+        public SomeResult SomeMethod()
+        {
+            string localizedString = "Texte à traduire".Translate(this);
+
+			// [...]
+        }
+    }
+
+
 ### Limitations, caveats, known bugs
 
 This API does not provide any administration UI. You have to implement it if needed.  
