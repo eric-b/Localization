@@ -64,7 +64,7 @@ The other services are all extension points:
 * **ITextKeyFactory**: responsible for the key generation based on source and native string.
 * **ITypeNameFactory**: responsible for the source name generation based on a type (provider specific).
 * **IViewNameFactory**: responsible for the source name generation based on route data (provider specific).
-
+* **IMissingLocalizedStringExtensionPoint**: extension point to add special treatment for missing localized strings (special formatting to bring out missing culture for example, or to log some useful informations...).
 
 Setup depends on the arcitecture of your application. The recommanded way is using an IoC container like [SimpleInjector](http://simpleinjector.codeplex.com/) :
 
@@ -80,6 +80,8 @@ Setup depends on the arcitecture of your application. The recommanded way is usi
     //   container.RegisterSingle<ILocalizedRepository>(() => new XmlFileRepository(translationsPath));
 	// 
 
+	var fallbackCulture = CultureInfo.GetCultureInfo("en-US"); // fallback culture is english
+
     // View localization:
     container.RegisterSingle<IViewNameFactory, DefaultViewNameFactory>();
     container.RegisterSingle<ILocalizedStringProvider>(
@@ -89,7 +91,9 @@ Setup depends on the arcitecture of your application. The recommanded way is usi
             container.GetInstance<ILocalizedRepository>(), 
             container.GetInstance<ITextKeyFactory>(),
             container.GetInstance<ILogger>(), 
-            CultureInfo.GetCultureInfo("fr-FR") // native text is in french...
+            CultureInfo.GetCultureInfo("fr-FR"), // native text is in french...
+			fallbackCulture, 
+			DefaultMissingLocalizedStringExtensionPoint.Instance
             ));
 
     // Legacy class localization:
@@ -101,7 +105,10 @@ Setup depends on the arcitecture of your application. The recommanded way is usi
                                                                         container.GetInstance<ILocalizedRepository>(),
                                                                         container.GetInstance<ITextKeyFactory>(),
                                                                         container.GetInstance<ILogger>(),
-                                                                        CultureInfo.GetCultureInfo("en-US")), // Names of model properties are in english...
+                                                                        CultureInfo.GetCultureInfo("en-US"), // Names of model properties are in english...
+																		fallbackCulture,
+																		DefaultMissingLocalizedStringExtensionPoint.Instance
+																		), 
                                                                     container.GetInstance<ITypeNameFactory>(),
                                                                     container.GetInstance<ILogger>()));
 

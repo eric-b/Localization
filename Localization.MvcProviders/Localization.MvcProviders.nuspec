@@ -9,7 +9,9 @@
     <projectUrl>http://github.com/eric-b/Localization</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes />
+    <releaseNotes>
+	v1.0.1.0: minor update to support skipping of missing localized strings behavior.
+    </releaseNotes>
     <copyright />
     <tags></tags>
     <dependencies>
