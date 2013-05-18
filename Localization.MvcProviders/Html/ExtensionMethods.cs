@@ -44,8 +44,7 @@ namespace Localization.MvcProviders.Html
         /// <param name="text">Native string.</param>
         /// <param name="args">Optional args used with <see cref="string.Format(string, object[])"/>.</param>
         /// <returns>Localized string (empty string if <paramref name="text"/> is <c>null</c> or empty).</returns>
-        public static IHtmlString Translate(this HtmlHelper helper
-            , string text, params object[] args)
+        public static IHtmlString Translate(this HtmlHelper helper, string text, params object[] args)
         {
             if (!DependencyResolverIsReady)
                 throw new InvalidOperationException("DependencyResolver.Current was null at initialization of this static class.");
@@ -58,9 +57,37 @@ namespace Localization.MvcProviders.Html
 
             return new HtmlString(args.Length != 0
                 ?
-                string.Format(Localizer.Translate(SourceNameFactory.GetSourceName(helper.ViewContext.RouteData), text, CultureInfo.CurrentUICulture), args)
+                string.Format(Localizer.Translate(SourceNameFactory.GetSourceName(helper.ViewContext.RouteData), text, CultureInfo.CurrentUICulture, false), args)
                 :
-                Localizer.Translate(SourceNameFactory.GetSourceName(helper.ViewContext.RouteData), text, CultureInfo.CurrentUICulture)
+                Localizer.Translate(SourceNameFactory.GetSourceName(helper.ViewContext.RouteData), text, CultureInfo.CurrentUICulture, false)
+                );
+        }
+
+        /// <summary>
+        /// Localizes a string.
+        /// </summary>
+        /// <param name="helper"></param>
+        /// <param name="preventMissingLocalizedStringBehavior">Prevents use of <see cref="IMissingLocalizedStringExtensionPoint"/>
+        /// if localized string in target culture is missing. The value should be <c>false</c> in most cases.</param>
+        /// <param name="text">Native string.</param>
+        /// <param name="args">Optional args used with <see cref="string.Format(string, object[])"/>.</param>
+        /// <returns>Localized string (empty string if <paramref name="text"/> is <c>null</c> or empty).</returns>
+        public static IHtmlString Translate(this HtmlHelper helper, bool preventMissingLocalizedStringBehavior, string text, params object[] args)
+        {
+            if (!DependencyResolverIsReady)
+                throw new InvalidOperationException("DependencyResolver.Current was null at initialization of this static class.");
+            if (!ViewNameFactoryOk)
+                throw new InvalidOperationException("IViewNameFactory service cannot be resolved from DependencyResolver.Current.");
+            if (!LocalizerOk)
+                throw new InvalidOperationException("ILocalizer service cannot be resolved from DependencyResolver.Current.");
+            if (string.IsNullOrWhiteSpace(text))
+                return new HtmlString(string.Empty);
+
+            return new HtmlString(args.Length != 0
+                ?
+                string.Format(Localizer.Translate(SourceNameFactory.GetSourceName(helper.ViewContext.RouteData), text, CultureInfo.CurrentUICulture, preventMissingLocalizedStringBehavior), args)
+                :
+                Localizer.Translate(SourceNameFactory.GetSourceName(helper.ViewContext.RouteData), text, CultureInfo.CurrentUICulture, preventMissingLocalizedStringBehavior)
                 );
         }
     }

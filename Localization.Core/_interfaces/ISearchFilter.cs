@@ -3,7 +3,7 @@
 namespace Localization.Core
 {
     /// <summary>
-    /// Interface used to search localized strings (<see cref="ILocalizedRepository.GetStrings"/>).
+    /// Interface used to search localized strings (<see cref="ILocalizedRepositoryReadOnly.GetStrings"/>).
     /// </summary>
     public interface ISearchFilter : IEquatable<ISearchFilter>
     {
@@ -18,7 +18,7 @@ namespace Localization.Core
         string Source { get; set; }
        
         /// <summary>
-        /// <para>Application & concrete repository specific value.</para>
+        /// <para>Application &amp; concrete repository specific value.</para>
         /// <para>Enable custom filter.</para>
         /// </summary>
         string Reserved { get; set; }

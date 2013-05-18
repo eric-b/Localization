@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DefaultLocalizer.cs" />
+    <Compile Include="DefaultMissingLocalizedStringExtensionPoint.cs" />
     <Compile Include="DefaultTextKeyFactory.cs" />
     <Compile Include="DefaultTypeNameFactory.cs" />
     <Compile Include="EmptyLogger.cs" />
@@ -47,12 +48,15 @@
     <Compile Include="_interfaces\ILocalizedRepositoryReadOnly.cs" />
     <Compile Include="_interfaces\ILocalizedStringProvider.cs" />
     <Compile Include="_interfaces\ILogger.cs" />
+    <Compile Include="_interfaces\IMissingLocalizedStringExtensionPoint.cs" />
     <Compile Include="_interfaces\ISearchFilter.cs" />
     <Compile Include="_interfaces\ITextKeyFactory.cs" />
     <Compile Include="_interfaces\ITypeNameFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Localization.Core.nuspec" />
+    <None Include="Localization.Core.nuspec">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

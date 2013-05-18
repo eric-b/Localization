@@ -30,7 +30,7 @@ namespace Localization.MvcProviders
             if (containerType == null || propertyName == null)
                 return metadata;
 
-            metadata.DisplayName = _localizer.Translate(_sourceNameFactory.GetSourceName(containerType), metadata.DisplayName ?? propertyName, CultureInfo.CurrentUICulture);
+            metadata.DisplayName = _localizer.Translate(_sourceNameFactory.GetSourceName(containerType), metadata.DisplayName ?? propertyName, CultureInfo.CurrentUICulture, false);
 
             return metadata;
         }
