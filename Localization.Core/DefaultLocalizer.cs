@@ -92,8 +92,12 @@ namespace Localization.Core
                 {
                     // Clones strings
                     _logger.Debug("Creates culture {0} ({1})...", targetCulture.Name, source);
-                    foreach (var s in _repository.GetStrings(_nativeCulture, SearchFilter.Empty))
-                        _repository.Save(targetCulture, s.Key, s.Source, s.Text, string.Empty);
+                    var strings = _repository.GetStrings(_nativeCulture, SearchFilter.Empty).ToArray();
+                    for (int i = 0; i < strings.Length; i++)
+                    {
+                        var s = strings[i];
+                        _repository.Save(targetCulture, s.Key, s.Source, s.Text, string.Empty);   
+                    }
                 }
                 else
                 {
