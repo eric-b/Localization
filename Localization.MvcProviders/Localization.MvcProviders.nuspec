@@ -11,11 +11,12 @@
     <description>$description$</description>
     <releaseNotes>
 	v1.0.1.0: minor update to support skipping of missing localized strings behavior.
+	v1.0.2.0: new extension methods for String and Controller classes (Localization namespace).
     </releaseNotes>
     <copyright />
     <tags></tags>
     <dependencies>
-      <dependency id="Localization.Core" version="1.0.0.0" />
+      <dependency id="Localization.Core" version="1.2.1.0" />
     </dependencies>
   </metadata>
 </package>
